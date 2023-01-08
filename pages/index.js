@@ -150,8 +150,8 @@ export default function Index() {
         <h1 className="text-7xl text-center mb-12">About Me</h1>
         <p className="text-3xl text-purple-300 mx-auto w-1/2">
           {
-            "I'm a student who has a passion for creating a game as a hobby.\
-            So I will turn a hobby into a larger, more targeted project and challenge\
+            "I'm a student who has a passion for creating a game as a hobby.\n\
+            So I will turn a hobby into a larger, more targeted project and challenge\n\
             and always be open to learning and improving my skills."
           }
         </p>
