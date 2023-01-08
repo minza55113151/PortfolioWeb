@@ -111,7 +111,7 @@ export default function Index() {
               <NavItem href="#skill&experience&education">Experience</NavItem>
               <NavItem href="#skill&experience&education">Education</NavItem>
               <NavItem href="#game">Game</NavItem>
-              <NavItem href="#contact">Contact Us</NavItem>
+              <NavItem href="#contact">Contact</NavItem>
             </ul>
           </div>
 
@@ -122,7 +122,7 @@ export default function Index() {
             <NavItem href="#skill&experience&education">Experience</NavItem>
             <NavItem href="#skill&experience&education">Education</NavItem>
             <NavItem href="#game">Game</NavItem>
-            <NavItem href="#contact">Contact Us</NavItem>
+            <NavItem href="#contact">Contact</NavItem>
           </ul>
         </nav>
         <div className="grid grid-rows-1 md:grid-cols-2 gap-5 py-72 px-6">
@@ -132,8 +132,8 @@ export default function Index() {
               Chatupon <span className="text-red-500">Badkaew</span>
             </h1>
             <h1 className="text-3xl">
-              {"I'm a student who interest in "}
-              <span className="text-red-500">Game Developer</span>.
+              {"I'm a student whose hobby is making "}
+              <span className="text-red-500">Games!</span>.
             </h1>
           </div>
           <div className="m-auto">
@@ -150,9 +150,9 @@ export default function Index() {
         <h1 className="text-7xl text-center mb-12">About Me</h1>
         <p className="text-3xl text-purple-300 mx-auto w-1/2">
           {
-            "I'm a student who interest in Game Developer. I'm a student who\
-          interest in Game Developer. I'm a student who interest in Game\
-          Developer. I'm a student who interest in Game Developer."
+            "I'm a student who has a passion for creating a game as a hobby.\
+            So I will turn a hobby into a larger, more targeted project and challenge\
+            and always be open to learning and improving my skills."
           }
         </p>
       </section>
@@ -235,7 +235,7 @@ export default function Index() {
         </div>
       </section>
       <footer className="bg-black py-4 text-center">
-        <p>© 2021 Chatupon Badkaew</p>
+        <p>© 2022 Chatupon Badkaew</p>
       </footer>
     </div>
   );
