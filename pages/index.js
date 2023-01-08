@@ -156,7 +156,7 @@ export default function Index() {
           <br></br>and always be open to learning and improving my skills.
         </p>
       </section>
-
+      {/* test */}
       <section
         id="skill&experience&education"
         className="bg-black py-24 grid lg:grid-cols-3 grid-cols-1"
