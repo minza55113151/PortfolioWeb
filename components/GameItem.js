@@ -6,10 +6,12 @@ export default function GameItem({
   gameLink,
 }) {
   return (
-    <div className="flex flex-col w-10/12 h-full pb-5 m-auto rounded bg-slate-700 ">
+    <div className="flex flex-col w-full sm:w-10/12 h-full pb-5 m-auto rounded bg-slate-700 ">
       <img src={gameImageSrc} className="w-full h-auto"></img>
-      <h1 className="text-4xl py-5 text-center bg-slate-800">{gameName}</h1>
-      <p className="text-lg p-5 m-auto">{gameDescription}</p>
+      <h1 className="text-2xl sm:text-4xl py-5 text-center bg-slate-800">
+        {gameName}
+      </h1>
+      <p className="text-sm sm:text-lg p-5 m-auto">{gameDescription}</p>
 
       <div className="flex flex-col lg:flex-row justify-center">
         {/* <a
@@ -46,7 +48,7 @@ export default function GameItem({
           target="_blank"
           rel="noreferrer"
           className="m-auto my-3 px-5 py-3 w-2/5  
-        bg-green-500 text-center text-2xl rounded-full"
+        bg-green-500 text-center text-lg sm:text-2xl rounded-full"
         >
           <button>Play</button>
         </a>

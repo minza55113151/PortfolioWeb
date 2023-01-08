@@ -127,19 +127,19 @@ export default function Index() {
         </nav>
         <div className="grid grid-rows-1 md:grid-cols-2 gap-5 py-72 px-6">
           <div className="flex flex-col space-y-5 m-auto">
-            <h1 className="text-3xl">Hello, my name is</h1>
-            <h1 className="text-7xl">
+            <h1 className="text-xl sm:text-3xl">Hello, my name is</h1>
+            <h1 className="text-5xl sm:text-7xl">
               Chatupon <span className="text-red-500">Badkaew</span>
             </h1>
-            <h1 className="text-3xl">
+            <h1 className="text-xl sm:text-3xl">
               {"I'm a student whose hobby is making "}
               <span className="text-red-500">Games!</span>.
             </h1>
           </div>
-          <div className="m-auto">
+          <div className="m-auto ">
             <img
               src="Me.jpg"
-              className="rounded-full w-96 h-96"
+              className="rounded-full w-72 h-72 sm:w-96 sm:h-96"
               alt="profile image"
             ></img>
           </div>
@@ -147,8 +147,8 @@ export default function Index() {
       </section>
 
       <section id="about" className="bg-stone-900 py-24">
-        <h1 className="text-7xl text-center mb-12">About Me</h1>
-        <p className="text-3xl mx-auto w-1/2">
+        <h1 className="text-5xl sm:text-7xl text-center mb-12">About Me</h1>
+        <p className="text-xl sm:text-3xl mx-auto w-3/4 sm:w-1/2">
           {"I'm a student who has a passion for creating a game as a hobby."}
           <br></br>
           {
@@ -166,8 +166,10 @@ export default function Index() {
       >
         <div className="mx-auto my-5 space-y-5">
           <div className="flex mb-12 justify-center">
-            <h1 className="text-5xl text-center align-middle mx-5">Skill</h1>
-            <Icon src="fist.png" size={100}></Icon>
+            <h1 className="text-3xl sm:text-5xl text-center align-middle mx-5">
+              Skill
+            </h1>
+            <Icon src="fist.png" size={60}></Icon>
           </div>
           <Item text="Unity" src="unity.png"></Item>
           <Item text="C#" src="c-sharp.png"></Item>
@@ -175,10 +177,10 @@ export default function Index() {
         </div>
         <div className="mx-auto my-5 space-y-5">
           <div className="flex mb-12 justify-center">
-            <h1 className="text-5xl text-center align-middle mx-5">
+            <h1 className="text-3xl sm:text-5xl text-center align-middle mx-5">
               Experience
             </h1>
-            <Icon src="bottle.png" size={100}></Icon>
+            <Icon src="bottle.png" size={60}></Icon>
           </div>
 
           <Item text="Unity" src="unity.png"></Item>
@@ -187,10 +189,10 @@ export default function Index() {
         {/* {tes} */}
         <div className="mx-auto my-5 space-y-5">
           <div className="flex mb-12 justify-center">
-            <h1 className="text-5xl text-center align-middle mx-5">
+            <h1 className="text-3xl sm:text-5xl text-center align-middle mx-5">
               Education
             </h1>
-            <Icon src="spellbook.png" size={100}></Icon>
+            <Icon src="spellbook.png" size={60}></Icon>
           </div>
           <Item
             text="Computer Engineering Kasetsart University"
@@ -199,8 +201,8 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="game" className="bg-stone-900 px-24 py-24">
-        <h1 className="text-7xl text-center mb-12">My Games</h1>
+      <section id="game" className="bg-stone-900 px-8 sm:px-24 py-24">
+        <h1 className="text-5xl sm:text-7xl text-center mb-12">My Games</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-20">
           {games.map((game) => (
             <GameItem
@@ -217,7 +219,9 @@ export default function Index() {
 
       <section id="contact" className="bg-black py-24">
         <div className="mx-auto w-1/2">
-          <h1 className="text-5xl text-center mb-12">Chatupon Badkaew</h1>
+          <h1 className="text-3xl sm:text-5xl text-center mb-12">
+            Chatupon Badkaew
+          </h1>
           <div className="flex flex-col space-y-5">
             <ContactItem logoSrc="outlook.png">
               minza1131@outlook.com
@@ -237,7 +241,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <footer className="bg-black py-4 text-center">
+      <footer className="bg-black text-sm sm:text-xl py-4 text-center">
         <p>© 2022 Chatupon Badkaew</p>
       </footer>
     </div>

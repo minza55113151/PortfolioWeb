@@ -6,7 +6,7 @@ export default function ContactItem({ logoSrc, linkSrc, children }) {
         href={linkSrc}
         target="_blank"
         rel="noreferrer"
-        className="text-xl my-auto"
+        className="text-sm sm:text-xl my-auto"
       >
         <h1>{children}</h1>
       </a>
