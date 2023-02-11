@@ -67,6 +67,16 @@ const games = [
     gameGithubLink: "https://github.com/minza55113151/Minesweeper",
     gameLink: "https://minesweeper-alpha-two.vercel.app",
   },
+  {
+    gameImageSrc: "gameImage/ROOTCHAR.png",
+    gameName: "ROOT CHAR",
+    gameDescription:
+      "This game was create on GGJ2023.\
+    It is a puzzle game. You need to find the root of the char.\
+    You can move the char by click on the box node and move it to another box node.",
+    gameGithubLink: "https://github.com/minza55113151/ROOT-CHAR",
+    gameLink: "https://root-char.vercel.app/",
+  },
 ];
 
 export default function Index() {
@@ -185,6 +195,7 @@ export default function Index() {
 
           <Item text="Unity" src="unity.png"></Item>
           <Item text="Pygame" src="python.png"></Item>
+          <Item text="GGJ 2023" src="spellbook.png"></Item>
         </div>
         {/* {tes} */}
         <div className="mx-auto my-5 space-y-5">
