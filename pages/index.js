@@ -84,7 +84,7 @@ export default function Index() {
   return (
     <div className="text-white">
       <section id="home" className="bg-black text-white">
-        <nav className="flex flex-col md:flex-row px-20 py-5">
+        <nav className="fixed bg-black flex flex-col md:flex-row w-full py-5">
           <div className="flex flex-row">
             <Logo />
             <button
@@ -117,20 +117,14 @@ export default function Index() {
             <ul className="ml-auto flex flex-col md:flex-row mt-4 md:mt-0 space-y-5 md:hidden">
               <NavItem href="#home">Home</NavItem>
               <NavItem href="#about">About Me</NavItem>
-              <NavItem href="#skill&experience&education">Skill</NavItem>
-              <NavItem href="#skill&experience&education">Experience</NavItem>
-              <NavItem href="#skill&experience&education">Education</NavItem>
               <NavItem href="#game">Game</NavItem>
               <NavItem href="#contact">Contact</NavItem>
             </ul>
           </div>
 
-          <ul className="ml-auto hidden md:flex flex-row space-x-5">
+          <ul className="ml-auto hidden md:flex flex-row space-x-5 items-center">
             <NavItem href="#home">Home</NavItem>
             <NavItem href="#about">About Me</NavItem>
-            <NavItem href="#skill&experience&education">Skill</NavItem>
-            <NavItem href="#skill&experience&education">Experience</NavItem>
-            <NavItem href="#skill&experience&education">Education</NavItem>
             <NavItem href="#game">Game</NavItem>
             <NavItem href="#contact">Contact</NavItem>
           </ul>
@@ -181,9 +175,18 @@ export default function Index() {
             </h1>
             <Icon src="fist.png" size={60}></Icon>
           </div>
-          <Item text="Unity" src="unity.png"></Item>
-          <Item text="C#" src="c-sharp.png"></Item>
-          <Item text="Python" src="python.png"></Item>
+          <Item text="Unity" src="unity.png" description="Basic"></Item>
+          <Item
+            text="C#"
+            src="c-sharp.png"
+            description="Basic for Unity"
+          ></Item>
+          <Item text="Python" src="python.png" description="Basic"></Item>
+          <Item
+            text="Git"
+            src="github.png"
+            description="Basic version control"
+          ></Item>
         </div>
         <div className="mx-auto my-5 space-y-5">
           <div className="flex mb-12 justify-center">
@@ -206,7 +209,7 @@ export default function Index() {
             <Icon src="spellbook.png" size={60}></Icon>
           </div>
           <Item
-            text="Computer Engineering Kasetsart University"
+            text="Computer Engineering Kasetsart University Year 2"
             src="ancient-scroll.png"
           ></Item>
         </div>
@@ -249,6 +252,14 @@ export default function Index() {
             >
               MinZung
             </ContactItem>
+            <ContactItem logoSrc="discord.png">MOOL#8344</ContactItem>
+            <ContactItem
+              logoSrc="instagram.png"
+              linkSrc="https://www.instagram.com/mnz_ng/"
+            >
+              mnz_ng
+            </ContactItem>
+            <ContactItem logoSrc="phone.png">090-968-7606</ContactItem>
           </div>
         </div>
       </section>
